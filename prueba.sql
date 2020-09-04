@@ -83,6 +83,18 @@ VALUES('bebidas', 'bebestibles'),
 ('snaks', 'cosas pa picar'),
 ('alcohol', 'pa no tomarse el agua del florero');
 
+--(Relacion categoria_producto)
+
+INSERT INTO categoria_producto(categoria_id, producto_id)
+VALUES(1, 1),
+(1, 2),
+(1, 3),
+(2, 4),
+(2, 5),
+(2, 6),
+(3, 7),
+(3, 8);
+
 --Insertar 10 facturas
 
 --¿Que cliente realizó la compra más cara?
