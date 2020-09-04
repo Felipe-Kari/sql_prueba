@@ -57,6 +57,13 @@ FOREIGN KEY(n_factura) REFERENCES facturas(n_factura)
 
 --Insertar 5 Clientes
 
+INSERT INTO clientes(nombre, rut, direccion)
+VALUES('Alejandra Flores', '7710295-6', 'Av Irrarazabal 1245'),
+('Sergio Alarcon', '10223176-9', 'Agustinas 3542'),
+('Leonor Vazquez', '8204495-k', 'Jose Arrieta 9245'),
+('Ricardo Collado', '15507031-0', 'Av España 523'),
+('Karen Huerta', '12811828-4', 'San Francisco 4231');
+
 --Insertar 8 productos
 
 --Insertar 3 categorias
