@@ -161,7 +161,7 @@ LIMIT(1);
 SELECT clientes.nombre FROM clientes
 INNER JOIN cliente_factura ON clientes.id = cliente_factura.cliente_id
 INNER JOIN facturas ON cliente_factura.factura_nf = facturas.n_factura
-WHERE facturas.precio_total > 100000
+WHERE facturas.precio_total > 100
 GROUP BY clientes.nombre;
 
 --¿Cuantos clientes han comprado el producto 6
