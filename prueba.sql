@@ -150,6 +150,25 @@ VALUES(1, 1),
 
 --¿Que cliente realizó la compra más cara?
 
+SELECT clientes.nombre FROM clientes
+INNER JOIN cliente_factura ON clientes.id = cliente_factura.cliente_id
+INNER JOIN facturas ON cliente_factura.factura_nf = facturas.n_factura
+ORDER BY facturas.precio_total DESC
+LIMIT(1);
+
 --¿Que cliente pagó sobre 100 de monto?
 
+SELECT clientes.nombre FROM clientes
+INNER JOIN cliente_factura ON clientes.id = cliente_factura.cliente_id
+INNER JOIN facturas ON cliente_factura.factura_nf = facturas.n_factura
+WHERE facturas.precio_total > 100000
+GROUP BY clientes.nombre;
+
 --¿Cuantos clientes han comprado el producto 6
+
+SELECT COUNT(clientes) FROM(SELECT clientes.nombre FROM clientes
+INNER JOIN cliente_factura ON clientes.id = cliente_factura.cliente_id
+INNER JOIN facturas ON cliente_factura.factura_nf = facturas.n_factura
+INNER JOIN listado_productos ON facturas.n_factura = listado_productos.n_factura
+WHERE listado_productos.producto_id = 6
+GROUP BY clientes.nombre) AS clientes;
