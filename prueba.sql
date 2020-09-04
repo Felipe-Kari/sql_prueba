@@ -2,7 +2,7 @@
 
 CREATE DATABASE prueba;
 
-c\ prueba;
+\c prueba;
 
 CREATE TABLE clientes(
 id SERIAL PRIMARY KEY,
@@ -51,7 +51,7 @@ n_factura INT NOT NULL,
 producto_id INT NOT NULL,
 producto_valor_unitario INT NOT NULL,
 cantidad INT NOT NULL,
-valor_total_pproducto INT NOT NULL
+valor_total_pproducto INT NOT NULL,
 FOREIGN KEY(n_factura) REFERENCES facturas(n_factura)
 );
 
