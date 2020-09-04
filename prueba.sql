@@ -66,6 +66,16 @@ VALUES('Alejandra Flores', '7710295-6', 'Av Irrarazabal 1245'),
 
 --Insertar 8 productos
 
+INSERT INTO productos(nombre, descripcion, valor_unitario)
+VALUES('Pepsi', 'Botella 3L', 1490),
+('Coca Cola', 'Botella 3L', 1915),
+('Sprite', 'Botella 1.5L', 1350),
+('Mani MP', '430g', 1665),
+('Papas Fritas MP', '250g', 1030),
+('Ramitas MP', '270g', 1030),
+('Cusqueña', 'Lata 473cc six pack', 3220),
+('Bear Beer', 'Lata 500cc six pack', 2580);
+
 --Insertar 3 categorias
 
 --Insertar 10 facturas
