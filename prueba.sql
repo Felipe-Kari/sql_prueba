@@ -134,6 +134,20 @@ VALUES(1, 7, 3220, 12, 38640),
 (9, 6, 1030, 24, 24720),
 (9, 8, 2580, 16, 41280);
 
+--(Relacion cliente_facturas)
+
+INSERT INTO cliente_factura(cliente_id, factura_nf)
+VALUES(1, 1),
+(1, 2),
+(2, 3),
+(2, 4),
+(2, 5),
+(3, 6),
+(4, 7),
+(4, 8),
+(4, 9),
+(4, 10);
+
 --¿Que cliente realizó la compra más cara?
 
 --¿Que cliente pagó sobre 100 de monto?
