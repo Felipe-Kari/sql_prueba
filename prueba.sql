@@ -78,6 +78,11 @@ VALUES('Pepsi', 'Botella 3L', 1490),
 
 --Insertar 3 categorias
 
+INSERT INTO categorias(nombre, descripcion)
+VALUES('bebidas', 'bebestibles'),
+('snaks', 'cosas pa picar'),
+('alcohol', 'pa no tomarse el agua del florero');
+
 --Insertar 10 facturas
 
 --¿Que cliente realizó la compra más cara?
